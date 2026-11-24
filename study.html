@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學習型筆電 | VTC Notebook Selector</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== 導航列 ===== -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">💻</span>
+            VTC Notebook Selector
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="study.html" class="active">學習型筆電</a></li>
+                <li><a href="game.html">遊戲型筆電</a></li>
+                <li><a href="configurator.html">配置選配</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== 頁面標題 ===== -->
+        <section class="page-header">
+            <h1>📚 學習型筆電推薦</h1>
+            <p class="page-desc">按照 VTC 不同學科分類，每個學科提供 <strong>低端、中端、高端</strong> 三檔配置同價格。</p>
+        </section>
+
+        <!-- ===== 學科導航 ===== -->
+        <nav class="subject-nav">
+            <ul>
+                <li><a href="#cs">💻 電腦科學</a></li>
+                <li><a href="#security">🔒 網絡安全</a></li>
+                <li><a href="#ai">🤖 AI/數據科學</a></li>
+                <li><a href="#engineering">⚙️ 工程類</a></li>
+                <li><a href="#design">🎨 多媒體設計</a></li>
+                <li><a href="#business">📊 商科/文科</a></li>
+            </ul>
+        </nav>
+
+        <!-- ==================== 科目 1：電腦科學 ==================== -->
+        <section id="cs" class="subject-section">
+            <h2>💻 電腦科學 / 軟件工程</h2>
+            <p class="subject-desc">需要跑 <strong>IDE</strong>（Visual Studio / IntelliJ / PyCharm）、Docker 容器、虛擬機。CPU 多核重要，記憶體建議 <strong>32GB 起步</strong>。</p>
+            <div class="table-wrapper">
+                <table class="laptop-table">
+                    <tr>
+                        <th>檔位</th><th>型號</th><th>CPU</th><th>記憶體</th><th>硬碟</th><th>顯示卡</th><th>螢幕</th><th>價格</th><th>可升級項目</th>
+                    </tr>
+                    <tr class="high-end">
+                        <td><span class="badge badge-high">🔴 高端</span></td><td>ThinkPad T16 Gen 5</td><td>Ultra 9 285H</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5050</td><td>16" 2.5K</td><td>HK$15,000</td><td>RAM +128GB、SSD x2</td>
+                    </tr>
+                    <tr class="high-end">
+                        <td><span class="badge badge-high">🔴 高端</span></td><td>MacBook Pro 16"</td><td>M5 Pro</td><td>36GB 統一記憶體</td><td>1TB SSD</td><td>內建 GPU</td><td>16" XDR</td><td>HK$18,500</td><td>不可升級</td>
+                    </tr>
+                    <tr class="mid-end">
+                        <td><span class="badge badge-mid">🟡 中端</span></td><td>ThinkBook 16+ 2026</td><td>Ultra 9 285H</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5060</td><td>16" 3.2K</td><td>HK$10,000</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                    <tr class="mid-end">
+                        <td><span class="badge badge-mid">🟡 中端</span></td><td>華碩靈耀 Pro 16</td><td>R9 8945HX</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5060</td><td>16" 2.5K OLED</td><td>HK$10,500</td><td>RAM +64GB、SSD 可換</td>
+                    </tr>
+                    <tr class="low-end">
+                        <td><span class="badge badge-low">🟢 低端</span></td><td>聯想小新 Pro 16 2026</td><td>Ultra 7 255H</td><td>32GB DDR5</td><td>1TB SSD</td><td>內顯</td><td>16" 2.5K</td><td>HK$6,500</td><td>SSD 可加裝</td>
+                    </tr>
+                    <tr class="low-end">
+                        <td><span class="badge badge-low">🟢 低端</span></td><td>RedmiBook Pro 16 2026</td><td>Ultra 7 255H</td><td>32GB</td><td>1TB SSD</td><td>內顯</td><td>16" 2.5K</td><td>HK$6,000</td><td>SSD 可換</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- ==================== 科目 2：網絡安全 ==================== -->
+        <section id="security" class="subject-section">
+            <h2>🔒 網絡安全</h2>
+            <p class="subject-desc">需要同時跑多台虛擬機（Kali Linux、Windows Server），記憶體需求極高，建議 <strong>32GB 起步，最好 64GB</strong>。</p>
+            <div class="table-wrapper">
+                <table class="laptop-table">
+                    <tr>
+                        <th>檔位</th><th>型號</th><th>CPU</th><th>記憶體</th><th>硬碟</th><th>顯示卡</th><th>螢幕</th><th>價格</th><th>可升級項目</th>
+                    </tr>
+                    <tr class="high-end">
+                        <td><span class="badge badge-high">🔴 高端</span></td><td>ThinkPad P16v Gen 4</td><td>R9 PRO</td><td>64GB DDR5</td><td>1TB SSD</td><td>RTX 5080</td><td>16" 2.5K</td><td>HK$20,000</td><td>RAM +128GB、SSD x2</td>
+                    </tr>
+                    <tr class="high-end">
+                        <td><span class="badge badge-high">🔴 高端</span></td><td>微星泰坦 18HX</td><td>i9-14900HX</td><td>64GB DDR5</td><td>2TB SSD</td><td>RTX 5090</td><td>18" 4K</td><td>HK$20,000</td><td>RAM +128GB、SSD x3</td>
+                    </tr>
+                    <tr class="mid-end">
+                        <td><span class="badge badge-mid">🟡 中端</span></td><td>機械革命蛟龍 16Pro</td><td>R9 8945HX</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5070</td><td>16" 2.5K</td><td>HK$9,500</td><td>RAM +96GB、SSD x2</td>
+                    </tr>
+                    <tr class="mid-end">
+                        <td><span class="badge badge-mid">🟡 中端</span></td><td>華碩天選 5 Pro 2026</td><td>R9 8945H</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5070</td><td>16" 2.5K</td><td>HK$11,000</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                    <tr class="low-end">
+                        <td><span class="badge badge-low">🟢 低端</span></td><td>聯想拯救者 Y7000 2026</td><td>i7-14650HX</td><td>24GB DDR5</td><td>512GB SSD</td><td>RTX 5060</td><td>15.6" 2K</td><td>HK$7,500</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                    <tr class="low-end">
+                        <td><span class="badge badge-low">🟢 低端</span></td><td>Redmi G Pro 2026</td><td>R7 8845H</td><td>24GB DDR5</td><td>512GB SSD</td><td>RTX 5060</td><td>16" 2K</td><td>HK$7,000</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- ==================== 科目 3：AI/數據科學 ==================== -->
+        <section id="ai" class="subject-section">
+            <h2>🤖 AI / 數據科學</h2>
+            <p class="subject-desc">本地 GPU 訓練是核心需求，強烈建議 <strong>NVIDIA 顯示卡</strong>。顯存 12GB+ 為佳，記憶體 32GB 起步。</p>
+            <div class="table-wrapper">
+                <table class="laptop-table">
+                    <tr>
+                        <th>檔位</th><th>型號</th><th>CPU</th><th>記憶體</th><th>硬碟</th><th>顯示卡</th><th>螢幕</th><th>價格</th><th>可升級項目</th>
+                    </tr>
+                    <tr class="high-end">
+                        <td><span class="badge badge-high">🔴 高端</span></td><td>ROG 槍神 9 Plus</td><td>R9 8950HX</td><td>64GB DDR5</td><td>2TB SSD</td><td>RTX 5090 24GB</td><td>18" 4K</td><td>HK$30,000</td><td>RAM +128GB、SSD x2</td>
+                    </tr>
+                    <tr class="high-end">
+                        <td><span class="badge badge-high">🔴 高端</span></td><td>聯想拯救者 Y9000P 至尊版</td><td>i9-14900HX</td><td>64GB DDR5</td><td>2TB SSD</td><td>RTX 5090 24GB</td><td>16" 4K</td><td>HK$29,000</td><td>RAM +128GB、SSD x2</td>
+                    </tr>
+                    <tr class="mid-end">
+                        <td><span class="badge badge-mid">🟡 中端</span></td><td>微星絕影 16 AI+</td><td>Ultra 9 285H</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5080 16GB</td><td>16" 2.5K OLED</td><td>HK$15,000</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                    <tr class="mid-end">
+                        <td><span class="badge badge-mid">🟡 中端</span></td><td>機械革命耀世 16Super</td><td>i9-14900HX</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5080 16GB</td><td>16" 2.5K</td><td>HK$13,000</td><td>RAM +96GB、SSD x2</td>
+                    </tr>
+                    <tr class="low-end">
+                        <td><span class="badge badge-low">🟢 低端</span></td><td>聯想拯救者 Y7000P 2026</td><td>i7-14650HX</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5070 12GB</td><td>16" 2.5K</td><td>HK$9,500</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                    <tr class="low-end">
+                        <td><span class="badge badge-low">🟢 低端</span></td><td>華碩天選 5</td><td>R7 8845H</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5070 12GB</td><td>15.6" 2K</td><td>HK$9,000</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- ==================== 科目 4：工程類 ==================== -->
+        <section id="engineering" class="subject-section">
+            <h2>⚙️ 工程類（機械/電子/土木）</h2>
+            <p class="subject-desc">需要跑 <strong>CAD 建模</strong>（AutoCAD/SolidWorks）、有限元仿真（ANSYS）、MATLAB。CPU 單核性能重要，記憶體 32GB 以上。</p>
+            <div class="table-wrapper">
+                <table class="laptop-table">
+                    <tr>
+                        <th>檔位</th><th>型號</th><th>CPU</th><th>記憶體</th><th>硬碟</th><th>顯示卡</th><th>螢幕</th><th>價格</th><th>可升級項目</th>
+                    </tr>
+                    <tr class="high-end">
+                        <td><span class="badge badge-high">🔴 高端</span></td><td>Dell Precision 5680</td><td>i9-13950HX</td><td>64GB DDR5</td><td>1TB SSD</td><td>RTX 5000 Ada</td><td>16" 4K OLED</td><td>HK$23,000</td><td>RAM +128GB、SSD x2</td>
+                    </tr>
+                    <tr class="high-end">
+                        <td><span class="badge badge-high">🔴 高端</span></td><td>ThinkPad P16v Gen 4</td><td>R9 PRO</td><td>64GB DDR5</td><td>1TB SSD</td><td>RTX 5080</td><td>16" 2.5K</td><td>HK$18,000</td><td>RAM +128GB、SSD x2</td>
+                    </tr>
+                    <tr class="mid-end">
+                        <td><span class="badge badge-mid">🟡 中端</span></td><td>聯想拯救者 Y7000P</td><td>i9-13980HX</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5080</td><td>16" 2.5K</td><td>HK$14,000</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                    <tr class="mid-end">
+                        <td><span class="badge badge-mid">🟡 中端</span></td><td>微星衝鋒坦克 Pro GP78</td><td>i9-13980HX</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5080</td><td>17" 2.5K</td><td>HK$13,000</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                    <tr class="low-end">
+                        <td><span class="badge badge-low">🟢 低端</span></td><td>聯想拯救者 Y7000 2026</td><td>i7-14650HX</td><td>24GB DDR5</td><td>512GB SSD</td><td>RTX 5060</td><td>15.6" 2K</td><td>HK$7,500</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                    <tr class="low-end">
+                        <td><span class="badge badge-low">🟢 低端</span></td><td>Redmi G Pro 2026</td><td>R7 8845H</td><td>24GB DDR5</td><td>512GB SSD</td><td>RTX 5060</td><td>16" 2K</td><td>HK$7,000</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- ==================== 科目 5：多媒體設計 ==================== -->
+        <section id="design" class="subject-section">
+            <h2>🎨 多媒體設計 / 影視製作</h2>
+            <p class="subject-desc">Adobe 全家桶、DaVinci Resolve、Blender。螢幕色準非常重要，建議 <strong>100% sRGB 或 DCI-P3</strong>。</p>
+            <div class="table-wrapper">
+                <table class="laptop-table">
+                    <tr>
+                        <th>檔位</th><th>型號</th><th>CPU</th><th>記憶體</th><th>硬碟</th><th>顯示卡</th><th>螢幕</th><th>價格</th><th>可升級項目</th>
+                    </tr>
+                    <tr class="high-end">
+                        <td><span class="badge badge-high">🔴 高端</span></td><td>華碩 ProArt P16</td><td>R9 8945HX</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5080</td><td>16" 4K OLED</td><td>HK$17,000</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                    <tr class="high-end">
+                        <td><span class="badge badge-high">🔴 高端</span></td><td>MacBook Pro 16"</td><td>M5 Pro</td><td>36GB 統一記憶體</td><td>1TB SSD</td><td>內建 GPU</td><td>16" XDR</td><td>HK$18,500</td><td>不可升級</td>
+                    </tr>
+                    <tr class="mid-end">
+                        <td><span class="badge badge-mid">🟡 中端</span></td><td>華碩靈耀 Pro 16 2026</td><td>Ultra 9 285H</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5060</td><td>16" 3.2K OLED</td><td>HK$10,500</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                    <tr class="mid-end">
+                        <td><span class="badge badge-mid">🟡 中端</span></td><td>ThinkBook 16p Gen 6</td><td>R9 8945HX</td><td>32GB DDR5</td><td>1TB SSD</td><td>RTX 5070</td><td>16" 2.5K</td><td>HK$12,000</td><td>RAM +64GB、SSD x2</td>
+                    </tr>
+                    <tr class="low-end">
+                        <td><span class="badge badge-low">🟢 低端</span></td><td>聯想小新 Pro 16 2026</td><td>Ultra 7 255H</td><td>32GB DDR5</td><td>1TB SSD</td><td>內顯</td><td>16" 2.5K</td><td>HK$6,500</td><td>SSD 可加裝</td>
+                    </tr>
+                    <tr class="low-end">
+                        <td><span class="badge badge-low">🟢 低端</span></td><td>RedmiBook Pro 16 2026</td><td>Ultra 7 255H</td><td>32GB</td><td>1TB SSD</td><td>內顯</td><td>16" 2.5K</td><td>HK$6,000</td><td>SSD 可換</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- ==================== 科目 6：商科/文科 ==================== -->
+        <section id="business" class="subject-section">
+            <h2>📊 商科 / 文科 / 語言 / 護理</h2>
+            <p class="subject-desc">Office 三件套、網頁瀏覽、線上會議。關注：<strong>重量、續航、螢幕、鍵盤手感</strong>。不需要獨立顯示卡。</p>
+            <div class="table-wrapper">
+                <table class="laptop-table">
+                    <tr>
+                        <th>檔位</th><th>型號</th><th>CPU</th><th>記憶體</th><th>硬碟</th><th>顯示卡</th><th>螢幕</th><th>價格</th><th>可升級項目</th>
+                    </tr>
+                    <tr class="high-end">
+                        <td><span class="badge badge-high">🔴 高端</span></td><td>MacBook Air 15" M5</td><td>M5</td><td>24GB</td><td>512GB SSD</td><td>內建 GPU</td><td>15" Retina</td><td>HK$12,000</td><td>不可升級</td>
+                    </tr>
+                    <tr class="high-end">
+                        <td><span class="badge badge-high">🔴 高端</span></td><td>華為 MateBook X Pro 2026</td><td>Ultra 7 255H</td><td>32GB DDR5</td><td>1TB SSD</td><td>內顯</td><td>14.2" 3.1K OLED</td><td>HK$13,000</td><td>SSD 可換</td>
+                    </tr>
+                    <tr class="mid-end">
+                        <td><span class="badge badge-mid">🟡 中端</span></td><td>聯想小新 Pro 14 2026</td><td>Ultra 5 225H</td><td>32GB DDR5</td><td>1TB SSD</td><td>內顯</td><td>14" 2.8K</td><td>HK$6,000</td><td>SSD 可換</td>
+                    </tr>
+                    <tr class="mid-end">
+                        <td><span class="badge badge-mid">🟡 中端</span></td><td>華碩靈耀 14 2026</td><td>Ultra 7 255H</td><td>32GB DDR5</td><td>1TB SSD</td><td>內顯</td><td>14" OLED 2.8K</td><td>HK$7,000</td><td>SSD 可換</td>
+                    </tr>
+                    <tr class="low-end">
+                        <td><span class="badge badge-low">🟢 低端</span></td><td>RedmiBook Pro 14 2026</td><td>Ultra 5 225H</td><td>16GB DDR5</td><td>512GB SSD</td><td>內顯</td><td>14" 2.5K</td><td>HK$4,300</td><td>SSD 可換</td>
+                    </tr>
+                    <tr class="low-end">
+                        <td><span class="badge badge-low">🟢 低端</span></td><td>榮耀 MagicBook X 16 Pro</td><td>Ultra 5 225H</td><td>16GB DDR5</td><td>512GB SSD</td><td>內顯</td><td>16" 2.5K</td><td>HK$4,600</td><td>SSD 可換</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 VTC Notebook Selector | 為 VTC 學生而設的筆電選購指南</p>
+    </footer>
+
+</body>
+</html>
