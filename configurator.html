@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配置選配 | VTC Notebook Selector</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== 導航列 ===== -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">💻</span>
+            VTC Notebook Selector
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="study.html">學習型筆電</a></li>
+                <li><a href="game.html">遊戲型筆電</a></li>
+                <li><a href="configurator.html" class="active">配置選配</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== 頁面標題 ===== -->
+        <section class="page-header">
+            <h1>⚙️ 配置選配 & 預算計算</h1>
+            <p class="page-desc">選擇基礎機型同配件，系統會自動計算<strong>預估總價</strong>，並畀出建議。</p>
+        </section>
+
+        <!-- ===== 配置表單 ===== -->
+        <section class="configurator-section">
+            <div class="configurator-grid">
+
+                <!-- 左邊：選項 -->
+                <div class="config-options">
+                    <h2>🖥️ 選擇你的配置</h2>
+
+                    <!-- 基礎機型 -->
+                    <div class="form-group">
+                        <label for="base-model">基礎機型：</label>
+                        <select id="base-model">
+                            <option value="3500">輕薄文書本（學習用）</option>
+                            <option value="5500">中階全能本（學習/輕度遊戲）</option>
+                            <option value="8000">高性能本（遊戲/設計/AI）</option>
+                            <option value="15000">旗艦遊戲本（極致性能）</option>
+                        </select>
+                    </div>
+
+                    <!-- CPU -->
+                    <div class="form-group">
+                        <label for="cpu">CPU：</label>
+                        <select id="cpu">
+                            <option value="0">Intel Ultra 5 225H</option>
+                            <option value="800">Intel Ultra 7 255H（升級 +HK$800）</option>
+                            <option value="2000">Intel Ultra 9 285H（升級 +HK$2,000）</option>
+                            <option value="1500">AMD R7 8845H（升級 +HK$1,500）</option>
+                            <option value="3000">AMD R9 8950HX（升級 +HK$3,000）</option>
+                        </select>
+                    </div>
+
+                    <!-- 記憶體 -->
+                    <div class="form-group">
+                        <label for="ram">記憶體：</label>
+                        <select id="ram">
+                            <option value="0">16GB DDR5</option>
+                            <option value="600">32GB DDR5（升級 +HK$600）</option>
+                            <option value="2000">64GB DDR5（升級 +HK$2,000）</option>
+                            <option value="5000">128GB DDR5（升級 +HK$5,000）</option>
+                        </select>
+                    </div>
+
+                    <!-- 硬碟 -->
+                    <div class="form-group">
+                        <label for="storage">硬碟：</label>
+                        <select id="storage">
+                            <option value="0">512GB SSD</option>
+                            <option value="500">1TB SSD（升級 +HK$500）</option>
+                            <option value="1500">2TB SSD（升級 +HK$1,500）</option>
+                            <option value="4000">4TB SSD（升級 +HK$4,000）</option>
+                        </select>
+                    </div>
+
+                    <!-- 螢幕 -->
+                    <div class="form-group">
+                        <label for="screen">螢幕：</label>
+                        <select id="screen">
+                            <option value="0">15.6" FHD 1080p（標準）</option>
+                            <option value="800">16" 2.5K（升級 +HK$800）</option>
+                            <option value="2000">16" OLED 2.8K（升級 +HK$2,000）</option>
+                            <option value="4000">16" 4K Mini LED（升級 +HK$4,000）</option>
+                        </select>
+                    </div>
+
+                    <!-- 保修 -->
+                    <div class="form-group">
+                        <label for="warranty">保修：</label>
+                        <select id="warranty">
+                            <option value="0">1 年基本保修</option>
+                            <option value="500">2 年延長保修（+HK$500）</option>
+                            <option value="1200">3 年上門保修（+HK$1,200）</option>
+                            <option value="2500">4 年全面保護（+HK$2,500）</option>
+                        </select>
+                    </div>
+
+                    <!-- 數量 -->
+                    <div class="form-group">
+                        <label for="quantity">數量：</label>
+                        <input type="number" id="quantity" value="1" min="1" max="10">
+                    </div>
+
+                </div>
+
+                <!-- 右邊：結果 -->
+                <div class="config-result">
+                    <h2>💰 預算結果</h2>
+                    <div class="result-box">
+                        <p class="result-label">你選擇的配置：</p>
+                        <p id="config-summary">請選擇配置</p>
+
+                        <hr>
+
+                        <p class="result-label">每台價格：</p>
+                        <p id="price-per-unit">HK$0</p>
+
+                        <p class="result-label">數量：</p>
+                        <p id="result-quantity">1</p>
+
+                        <p class="result-label total-label">預估總價：</p>
+                        <p id="total-price" class="total-price">HK$0</p>
+                    </div>
+
+                    <!-- 建議回饋 -->
+                    <div class="advice-box">
+                        <h3>💡 選購建議</h3>
+                        <p id="advice-text">請選擇配置後查看建議。</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 VTC Notebook Selector | 為 VTC 學生而設的筆電選購指南</p>
+    </footer>
+
+    <!-- 引用外部 JavaScript 檔案 -->
+    <script src="js/configurator.js"></script>
+
+</body>
+</html>
