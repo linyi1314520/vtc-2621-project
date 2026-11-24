@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTC Notebook Selector | 首頁</title>
+    <!-- 引用外部 CSS 樣式表 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== 導航列 ===== -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">💻</span>
+            VTC Notebook Selector
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">首頁</a></li>
+                <li><a href="study.html">學習型筆電</a></li>
+                <li><a href="game.html">遊戲型筆電</a></li>
+                <li><a href="configurator.html">配置選配</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== 主橫幅 ===== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>為 VTC 學生而設的筆電選購指南</h1>
+            <p>唔知點揀筆電？我哋幫你分析每個學科嘅需求，提供最合適嘅配置建議。</p>
+            <p class="hero-sub">香港空間有限，筆電係最實際嘅選擇。</p>
+            <div class="hero-buttons">
+                <a href="study.html" class="btn btn-primary">📚 學習型筆電</a>
+                <a href="game.html" class="btn btn-secondary">🎮 遊戲型筆電</a>
+                <a href="configurator.html" class="btn btn-accent">⚙️ 自訂配置</a>
+            </div>
+        </div>
+        <!-- 用 CSS 繪製的筆電示意圖（不需要外部圖片） -->
+        <div class="hero-image">
+            <div class="laptop-drawing">
+                <div class="laptop-screen">
+                    <span>VTC</span>
+                </div>
+                <div class="laptop-keyboard"></div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- ===== 特色介紹 ===== -->
+        <section class="features">
+            <h2>為什麼選擇 VTC Notebook Selector？</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>按學科分類</h3>
+                    <p>唔同科目對電腦要求唔同。IT 學生需要大內存跑虛擬機，設計學生需要高色準螢幕。我哋按學科幫你整理好。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>透明價格</h3>
+                    <p>每個學科分為低、中、高端三檔，清楚列明配置同價錢，符合學生預算。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>可升級選項</h3>
+                    <p>所有機型都列出可升級項目，包括 CPU、記憶體、硬碟、螢幕等，買返嚟之後可以慢慢升級。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>香港環境考慮</h3>
+                    <p>香港居住空間有限，唔係個個屋企都放得落台式機。筆電係最實際嘅選擇，我哋深明呢點。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 學習 vs 遊戲對比 ===== -->
+        <section class="comparison">
+            <h2>你需要哪一種筆電？</h2>
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <tr>
+                        <th>比較項目</th>
+                        <th>📚 學習型筆電</th>
+                        <th>🎮 遊戲型筆電</th>
+                    </tr>
+                    <tr>
+                        <td>主要用途</td>
+                        <td>做功課、寫 Code、文書處理、設計</td>
+                        <td>打機、3A 大作、高幀率電競</td>
+                    </tr>
+                    <tr>
+                        <td>重量</td>
+                        <td>通常較輕（1.2kg - 2.0kg）</td>
+                        <td>通常較重（2.2kg - 3.5kg）</td>
+                    </tr>
+                    <tr>
+                        <td>續航力</td>
+                        <td>6 - 20 小時</td>
+                        <td>3 - 6 小時</td>
+                    </tr>
+                    <tr>
+                        <td>顯示卡</td>
+                        <td>多數用內顯 / 入門獨顯</td>
+                        <td>中高階獨顯（RTX 系列）</td>
+                    </tr>
+                    <tr>
+                        <td>散熱</td>
+                        <td>一般散熱即可</td>
+                        <td>需要強力散熱系統</td>
+                    </tr>
+                    <tr>
+                        <td>適合對象</td>
+                        <td>商科、文科、IT 基礎學習</td>
+                        <td>遊戲愛好者、AI 訓練、3D 渲染</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- ===== 快速導覽 ===== -->
+        <section class="quick-links">
+            <h2>快速導覽</h2>
+            <div class="quick-grid">
+                <a href="study.html#cs" class="quick-card">💻 電腦科學</a>
+                <a href="study.html#security" class="quick-card">🔒 網絡安全</a>
+                <a href="study.html#ai" class="quick-card">🤖 AI/數據科學</a>
+                <a href="study.html#engineering" class="quick-card">⚙️ 工程類</a>
+                <a href="study.html#design" class="quick-card">🎨 多媒體設計</a>
+                <a href="study.html#business" class="quick-card">📊 商科/文科</a>
+                <a href="game.html#tier-low" class="quick-card">🎯 低端遊戲本</a>
+                <a href="game.html#tier-mid" class="quick-card">🎮 中端遊戲本</a>
+                <a href="game.html#tier-high" class="quick-card">🔥 高端遊戲本</a>
+                <a href="game.html#tier-flagship" class="quick-card">🚀 旗艦遊戲本</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== 頁尾 ===== -->
+    <footer>
+        <p>© 2026 VTC Notebook Selector | 為 VTC 學生而設的筆電選購指南</p>
+        <p>本站只提供選購建議，不直接銷售產品。所有價格僅供參考。</p>
+    </footer>
+
+</body>
+</html>
