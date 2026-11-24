@@ -1,0 +1,684 @@
+/* ========== VTC Notebook Selector 樣式表 ========== */
+
+/* ===== 基本設定 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft JhengHei", "PingFang HK", "Noto Sans TC", sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== 導航列 ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a2e;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.logo-icon {
+    margin-right: 8px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.navbar nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.95rem;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #30305a;
+    color: #fff;
+}
+
+.navbar nav ul li a.active {
+    background-color: #e94560;
+    color: #fff;
+}
+
+/* ===== 主橫幅 ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #fff;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.hero-sub {
+    font-size: 0.95rem;
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.btn-primary {
+    background-color: #e94560;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #533483;
+    color: #fff;
+}
+
+.btn-accent {
+    background-color: #0f3460;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+/* ===== CSS 繪製的筆電示意圖 ===== */
+.hero-image {
+    flex: 0 0 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laptop-drawing {
+    width: 220px;
+}
+
+.laptop-screen {
+    background-color: #333;
+    border: 8px solid #555;
+    border-radius: 10px 10px 0 0;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laptop-screen span {
+    color: #e94560;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.laptop-keyboard {
+    background-color: #777;
+    height: 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* ===== 特色卡片 ===== */
+.features {
+    padding: 50px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    color: #1a1a2e;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ===== 對比表格 ===== */
+.comparison {
+    padding: 50px 30px;
+    background-color: #fff;
+}
+
+.comparison h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.comparison-table th {
+    background-color: #1a1a2e;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ===== 快速導覽 ===== */
+.quick-links {
+    padding: 50px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quick-links h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.quick-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.quick-card {
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #1a1a2e;
+    font-weight: bold;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.quick-card:hover {
+    border-color: #e94560;
+    background-color: #fff5f5;
+}
+
+/* ===== 頁面標題 ===== */
+.page-header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.page-desc {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 8px;
+}
+
+/* ===== 學科導航 ===== */
+.subject-nav {
+    background-color: #fff;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e0e0e0;
+    overflow-x: auto;
+}
+
+.subject-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subject-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.subject-nav ul li a:hover {
+    background-color: #e94560;
+    color: #fff;
+}
+
+/* ===== 學科區塊 ===== */
+.subject-section {
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.subject-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #1a1a2e;
+}
+
+.subject-desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* ===== 筆電表格 ===== */
+.laptop-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 0.85rem;
+}
+
+.laptop-table th,
+.laptop-table td {
+    padding: 10px 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.laptop-table th {
+    background-color: #1a1a2e;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.laptop-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ===== 檔位標籤 ===== */
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.badge-high {
+    background-color: #ffe0e0;
+    color: #c0392b;
+}
+
+.badge-mid {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.badge-low {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* ===== 檔位總覽表 ===== */
+.tier-overview {
+    padding: 40px 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tier-overview h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.tier-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tier-table th,
+.tier-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.tier-table th {
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+.tier-low {
+    background-color: #d4edda !important;
+}
+
+.tier-mid {
+    background-color: #fff3cd !important;
+}
+
+.tier-high {
+    background-color: #ffe0e0 !important;
+}
+
+.tier-flagship {
+    background-color: #e8d5f5 !important;
+}
+
+/* ===== 遊戲檔位區塊 ===== */
+.game-tier {
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.game-tier h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #1a1a2e;
+}
+
+.tier-desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* ===== 配置選配頁面 ===== */
+.configurator-section {
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.configurator-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* ===== 表單 ===== */
+.config-options h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #1a1a2e;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    border-color: #e94560;
+    outline: none;
+}
+
+/* ===== 結果區 ===== */
+.config-result h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #1a1a2e;
+}
+
+.result-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.result-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+#config-summary {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.result-box hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+#price-per-unit {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1a1a2e;
+}
+
+#result-quantity {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1a1a2e;
+}
+
+.total-label {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.total-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e94560;
+}
+
+/* ===== 建議回饋 ===== */
+.advice-box {
+    background-color: #fff8e1;
+    border-left: 4px solid #ffa000;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.advice-box h3 {
+    margin-bottom: 10px;
+    color: #e65100;
+}
+
+#advice-text {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* ===== 頁尾 ===== */
+footer {
+    background-color: #1a1a2e;
+    color: #ccc;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* ===== RWD 響應式設計 ===== */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .navbar nav ul {
+        justify-content: center;
+    }
+
+    .navbar nav ul li a {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding: 30px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        flex: 0 0 auto;
+        width: 180px;
+    }
+
+    .features {
+        padding: 30px 15px;
+    }
+
+    .features h2 {
+        font-size: 1.5rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison {
+        padding: 30px 15px;
+    }
+
+    .comparison h2 {
+        font-size: 1.5rem;
+    }
